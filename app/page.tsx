@@ -137,35 +137,35 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Orange card highlighting primary service */}
-            <div className="bg-gradient-to-br from-orange-500 to-orange-600 p-8 rounded-3xl flex flex-col justify-between h-80 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/20 shadow-xl shadow-orange-500/10">
+            {/* Design & Engineering Service Card */}
+            <div className="group bg-slate-900/40 backdrop-blur-md border border-slate-800/60 p-8 rounded-3xl flex flex-col justify-between h-80 transition-all duration-300 hover:-translate-y-2 hover:bg-gradient-to-br hover:from-orange-500 hover:to-orange-600 hover:border-transparent hover:shadow-2xl hover:shadow-orange-500/20 shadow-xl shadow-black/10">
               <div>
-                <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center mb-6">
-                  <Award className="w-6 h-6 text-white" />
+                <div className="w-12 h-12 rounded-2xl bg-orange-500/10 group-hover:bg-white/10 flex items-center justify-center mb-6 transition-colors duration-300">
+                  <Award className="w-6 h-6 text-orange-500 group-hover:text-white transition-colors duration-300" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Design & Engineering</h3>
-                <p className="text-orange-100 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-xl font-bold mb-3 text-white">Design & Engineering</h3>
+                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed group-hover:text-orange-100 transition-colors duration-300">
                   Structural load analysis, 3D modeling, detail shop drawings.
                 </p>
               </div>
-              <Link href="/services#design-engineering" className="inline-flex items-center text-xs font-bold gap-1 mt-4 hover:underline">
+              <Link href="/services#design-engineering" className="inline-flex items-center text-xs font-bold gap-1 mt-4 text-orange-500 group-hover:text-white transition-colors duration-300 hover:underline">
                 Read Details
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
 
             {services.map((service, idx) => (
-              <div key={service.id} className="bg-slate-900/40 backdrop-blur-md border border-slate-800/60 p-8 rounded-3xl flex flex-col justify-between h-80 transition-all duration-300 hover:-translate-y-2 hover:border-orange-500/30 hover:shadow-xl hover:shadow-black/30">
+              <div key={service.id} className="group bg-slate-900/40 backdrop-blur-md border border-slate-800/60 p-8 rounded-3xl flex flex-col justify-between h-80 transition-all duration-300 hover:-translate-y-2 hover:bg-gradient-to-br hover:from-orange-500 hover:to-orange-600 hover:border-transparent hover:shadow-2xl hover:shadow-orange-500/20 shadow-xl shadow-black/10">
                 <div>
-                  <div className="w-12 h-12 rounded-2xl bg-orange-500/10 flex items-center justify-center mb-6">
-                    <Zap className="w-6 h-6 text-orange-500" />
+                  <div className="w-12 h-12 rounded-2xl bg-orange-500/10 group-hover:bg-white/10 flex items-center justify-center mb-6 transition-colors duration-300">
+                    <Zap className="w-6 h-6 text-orange-500 group-hover:text-white transition-colors duration-300" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                  <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                  <h3 className="text-xl font-bold mb-3 text-white">{service.title}</h3>
+                  <p className="text-slate-400 text-xs sm:text-sm leading-relaxed group-hover:text-orange-100 transition-colors duration-300">
                     {service.shortDescription}
                   </p>
                 </div>
-                <Link href={`/services#${service.id}`} className="inline-flex items-center text-xs font-bold gap-1 mt-4 text-orange-500 hover:text-orange-400">
+                <Link href={`/services#${service.id}`} className="inline-flex items-center text-xs font-bold gap-1 mt-4 text-orange-500 group-hover:text-white transition-colors duration-300 hover:underline">
                   Read Details
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
