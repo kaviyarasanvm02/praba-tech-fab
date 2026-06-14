@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prabatechpeb.com/sitemap.xml
