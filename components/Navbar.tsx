@@ -39,18 +39,17 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-[38px] left-0 right-0 z-50 transition-all duration-350 bg-slate-950/90 backdrop-blur-md border-b border-orange-500/20 shadow-lg shadow-black/25 ${
-          shouldStyleHeader 
-            ? "py-2.5" 
-            : "py-4"
-        }`}
+        className={`fixed top-[38px] left-0 right-0 z-50 transition-all duration-350 bg-slate-950/90 backdrop-blur-md border-b border-orange-500/20 shadow-lg shadow-black/25 ${shouldStyleHeader
+            ? "py-2.5"
+            : "py-3"
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            
+
             {/* Logo */}
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="flex items-center space-x-3 text-white group focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-lg outline-none"
             >
               <div className="relative w-10 h-10 rounded-xl overflow-hidden bg-white shrink-0 border border-slate-800 transition-all duration-300 ring-2 ring-orange-500/40 group-hover:ring-orange-500 group-hover:scale-105 logo-pulse">
@@ -76,9 +75,8 @@ export default function Navbar() {
                   <Link
                     key={link.name}
                     href={link.href}
-                    className={`relative px-4 py-2 text-sm font-semibold tracking-wide transition-colors duration-200 outline-none focus-visible:ring-2 focus-visible:ring-orange-500 rounded-lg ${
-                      isActive ? "text-orange-500 font-bold" : "text-slate-300 hover:text-white"
-                    }`}
+                    className={`relative px-4 py-2 text-sm font-semibold tracking-wide transition-colors duration-200 outline-none focus-visible:ring-2 focus-visible:ring-orange-500 rounded-lg ${isActive ? "text-orange-500 font-bold" : "text-slate-300 hover:text-white"
+                      }`}
                   >
                     {link.name}
                     {isActive && (
@@ -118,23 +116,21 @@ export default function Navbar() {
       </header>
 
       {/* Mobile Drawer (Full Height Sliding Side Sheet) */}
-      <div 
-        className={`fixed inset-0 z-[60] bg-slate-950/60 backdrop-blur-sm transition-opacity duration-300 ${
-          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-        }`}
+      <div
+        className={`fixed inset-0 z-[60] bg-slate-950/60 backdrop-blur-sm transition-opacity duration-300 ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          }`}
         onClick={() => setIsOpen(false)}
       >
-        <div 
-          className={`absolute top-0 right-0 w-80 max-w-full h-full bg-slate-900 border-l border-slate-800 p-6 shadow-2xl flex flex-col justify-between transition-transform duration-300 ease-in-out ${
-            isOpen ? "translate-x-0" : "translate-x-full"
-          }`}
+        <div
+          className={`absolute top-0 right-0 w-80 max-w-full h-full bg-slate-900 border-l border-slate-800 p-6 shadow-2xl flex flex-col justify-between transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
+            }`}
           onClick={(e) => e.stopPropagation()}
         >
           <div>
             <div className="flex items-center justify-between mb-8 pb-6 border-b border-slate-800">
-              <Link 
-                href="/" 
-                onClick={() => setIsOpen(false)} 
+              <Link
+                href="/"
+                onClick={() => setIsOpen(false)}
                 className="flex items-center space-x-3 text-white"
               >
                 <div className="relative w-8 h-8 rounded-lg overflow-hidden bg-white shrink-0">
@@ -166,9 +162,8 @@ export default function Navbar() {
                     key={link.name}
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className={`px-4 py-3.5 rounded-xl text-sm font-bold transition-all ${
-                      isActive ? "bg-orange-500/10 text-orange-400" : "text-slate-300 hover:text-white hover:bg-white/5"
-                    }`}
+                    className={`px-4 py-3.5 rounded-xl text-sm font-bold transition-all ${isActive ? "bg-orange-500/10 text-orange-400" : "text-slate-300 hover:text-white hover:bg-white/5"
+                      }`}
                   >
                     {link.name}
                   </Link>
