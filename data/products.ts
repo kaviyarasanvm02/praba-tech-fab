@@ -10,7 +10,7 @@ export const products: Product[] = [
   {
     id: "peb-structures",
     title: "Pre-Engineered Buildings (PEB)",
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80",
+    image: "/Pre-engineered buildings (PEB).jpeg",
     description: "Design, engineering, manufacturing, and installation of high-quality Pre-Engineered Steel Buildings customized for heavy industries and commercial structures.",
     features: [
       "Industrial PEB Structures",
@@ -22,7 +22,7 @@ export const products: Product[] = [
   {
     id: "warehouse-construction",
     title: "Warehouse Construction",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
+    image: "/Logistics warehouse.jpeg",
     description: "Full-scale warehousing construction and logistics infrastructure built for optimum storage efficiency, safety, and faster material handling.",
     features: [
       "Logistics Warehouses & Distribution Centers",
@@ -34,7 +34,7 @@ export const products: Product[] = [
   {
     id: "steel-fabrication",
     title: "Steel Fabrication",
-    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
+    image: "/Steel Fabrication.png",
     description: "Advanced structural steel fabrication yielding customized industrial structural elements with precision engineering.",
     features: [
       "Structural Steel Fabrication & Heavy Steel Structures",

@@ -31,7 +31,7 @@ export default function ServicesPage() {
         return "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80";
       case "fabrication":
       case "steel-fabrication":
-        return "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80";
+        return "/Steel Fabrication.png";
       case "installation":
       case "erection-installation":
         return "/Erection.png";
