@@ -13,8 +13,10 @@ export default function ServiceCard({ service }: ServiceCardProps) {
       case "design-engineering":
         return <Landmark className="w-8 h-8 text-orange-500" />;
       case "fabrication":
+      case "steel-fabrication":
         return <Hammer className="w-8 h-8 text-orange-500" />;
       case "installation":
+      case "erection-installation":
         return <ShieldCheck className="w-8 h-8 text-orange-500" />;
       default:
         return <Hammer className="w-8 h-8 text-orange-500" />;

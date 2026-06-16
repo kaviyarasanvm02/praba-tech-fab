@@ -15,7 +15,7 @@ export const projects: Project[] = [
     location: "Karur, Tamil Nadu",
     area: "85,000 Sq.ft",
     year: "2025",
-    image: "/WhatsApp Image 2026-06-03 at 8.40.54 PM.jpeg",
+    image: "/Industrial PEB Fabrication Shed.png",
     category: "Industrial"
   },
   {
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     location: "Namakkal, Tamil Nadu",
     area: "65,000 Sq.ft",
     year: "2024",
-    image: "/WhatsApp Image 2026-06-03 at 8.40.57 PM.jpeg",
+    image: "/Factory Manufacturing Building.png",
     category: "Industrial"
   },
   {

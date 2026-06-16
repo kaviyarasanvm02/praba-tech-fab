@@ -15,8 +15,10 @@ export default function ServicesPage() {
       case "design-engineering":
         return <Landmark className="w-6 h-6 text-orange-500" />;
       case "fabrication":
+      case "steel-fabrication":
         return <Hammer className="w-6 h-6 text-orange-500" />;
       case "installation":
+      case "erection-installation":
         return <ShieldCheck className="w-6 h-6 text-orange-500" />;
       default:
         return <Hammer className="w-6 h-6 text-orange-500" />;
@@ -28,9 +30,11 @@ export default function ServicesPage() {
       case "design-engineering":
         return "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80";
       case "fabrication":
+      case "steel-fabrication":
         return "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80";
       case "installation":
-        return "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80";
+      case "erection-installation":
+        return "/Erection.png";
       default:
         return "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80";
     }

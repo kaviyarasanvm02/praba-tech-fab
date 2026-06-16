@@ -12,19 +12,19 @@ export default function HeroSection() {
       subtitle: "CONSTRUCTION BUSINESS.",
       title: "We build something new and consistent.",
       description: "Praba Tech specializes in high-strength pre-engineered steel buildings, heavy structural fabrication, and turnkey logistics warehouses across Karur.",
-      image: "/WhatsApp Image 2026-06-03 at 8.40.54 PM.jpeg"
+      image: "/silhouette-factory-building.jpeg"
     },
     {
       subtitle: "PREMIUM STEEL SOLUTIONS.",
       title: "Engineered for maximum scale and safety.",
       description: "We manufacture heavy steel trusses, platforms, and mezzanine frames to international standards directly in our Karur workshop.",
-      image: "/WhatsApp Image 2026-06-03 at 8.40.56 PM.jpeg"
+      image: "/Industrial PEB Fabrication Shed.png"
     },
     {
       subtitle: "FAST-TRACK ERECTION.",
       title: "Rapid modular building solutions.",
       description: "Our experienced site alignment teams deploy safe rigging and bolting to complete structures within weeks.",
-      image: "/WhatsApp Image 2026-06-03 at 8.40.57 PM.jpeg"
+      image: "/Erection.png"
     }
   ];
 
@@ -52,7 +52,7 @@ export default function HeroSection() {
         <div
           key={idx}
           className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            idx === current ? "opacity-85" : "opacity-0"
+            idx === current ? "opacity-100" : "opacity-0"
           }`}
         >
           <Image
@@ -67,12 +67,12 @@ export default function HeroSection() {
       ))}
 
       {/* Grid overlay pattern */}
-      <div className="absolute inset-0 bg-slate-950/25" />
+      <div className="absolute inset-0 bg-slate-950/10" />
       <div className="absolute inset-0 dark-grid-bg pointer-events-none opacity-10" />
 
       {/* Slide Content */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 w-full flex justify-start">
-        <div className="max-w-3xl bg-slate-950/50 backdrop-blur-xl border border-white/10 p-8 sm:p-12 lg:p-16 rounded-[2.5rem] shadow-2xl shadow-black/50 transition-all duration-500">
+        <div className="max-w-2xl bg-slate-950/30 backdrop-blur-lg border border-white/10 p-8 sm:p-12 lg:p-14 rounded-[2.5rem] shadow-2xl shadow-black/30 transition-all duration-500">
           {/* Slide Progress/Indicator */}
           <div className="flex items-center gap-3 mb-6">
             <span className="text-orange-500 font-black tracking-widest text-sm sm:text-base">
