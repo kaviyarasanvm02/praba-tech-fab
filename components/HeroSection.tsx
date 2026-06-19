@@ -12,19 +12,19 @@ export default function HeroSection() {
       subtitle: "CONSTRUCTION BUSINESS.",
       title: "We build something new and consistent.",
       description: "Praba Tech specializes in high-strength pre-engineered steel buildings, heavy structural fabrication, and turnkey logistics warehouses across Karur.",
-      image: "/silhouette-factory-building.jpeg"
+      image: "/heroimage.png"
     },
     {
       subtitle: "PREMIUM STEEL SOLUTIONS.",
       title: "Engineered for maximum scale and safety.",
       description: "We manufacture heavy steel trusses, platforms, and mezzanine frames to international standards directly in our Karur workshop.",
-      image: "/Industrial PEB Fabrication Shed.png"
+      image: "/heroimage.png"
     },
     {
       subtitle: "FAST-TRACK ERECTION.",
       title: "Rapid modular building solutions.",
       description: "Our experienced site alignment teams deploy safe rigging and bolting to complete structures within weeks.",
-      image: "/Erection.png"
+      image: "/heroimage.png"
     }
   ];
 
@@ -51,9 +51,8 @@ export default function HeroSection() {
       {slides.map((slide, idx) => (
         <div
           key={idx}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            idx === current ? "opacity-100" : "opacity-0"
-          }`}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${idx === current ? "opacity-100" : "opacity-0"
+            }`}
         >
           <Image
             src={slide.image}
@@ -79,8 +78,8 @@ export default function HeroSection() {
               0{current + 1}
             </span>
             <div className="w-16 h-[2px] bg-slate-800 relative rounded-full overflow-hidden">
-              <div 
-                className="absolute left-0 top-0 h-full bg-orange-500 transition-all duration-500" 
+              <div
+                className="absolute left-0 top-0 h-full bg-orange-500 transition-all duration-500"
                 style={{ width: `${((current + 1) / slides.length) * 100}%` }}
               />
             </div>
@@ -134,9 +133,8 @@ export default function HeroSection() {
           <button
             key={idx}
             onClick={() => setCurrent(idx)}
-            className={`w-2.5 h-2.5 rounded-full transition-all duration-350 ${
-              idx === current ? "bg-orange-500 scale-125 w-6" : "bg-white/30 hover:bg-white/60"
-            }`}
+            className={`w-2.5 h-2.5 rounded-full transition-all duration-350 ${idx === current ? "bg-orange-500 scale-125 w-6" : "bg-white/30 hover:bg-white/60"
+              }`}
             aria-label={`Go to slide ${idx + 1}`}
           />
         ))}

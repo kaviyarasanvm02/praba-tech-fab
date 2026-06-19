@@ -28,7 +28,7 @@ export default function ServicesPage() {
   const getServiceImage = (id: string) => {
     switch (id) {
       case "design-engineering":
-        return "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80";
+        return "/Design & Engineering.png";
       case "fabrication":
       case "steel-fabrication":
         return "/Steel Fabrication.png";
@@ -36,7 +36,7 @@ export default function ServicesPage() {
       case "erection-installation":
         return "/Erection.png";
       default:
-        return "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80";
+        return "/Industrial PEB Fabrication Shed.png";
     }
   };
 

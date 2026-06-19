@@ -42,7 +42,7 @@ export const projects: Project[] = [
     location: "Erode, Tamil Nadu",
     area: "2,20,000 Sq.ft",
     year: "2025",
-    image: "/WhatsApp Image 2026-06-03 at 8.40.59 PM.jpeg",
+    image: "/Multispansteelstructurehangar.jpeg",
     category: "Custom"
   },
   {
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     location: "Salem, Tamil Nadu",
     area: "45,000 Sq.ft",
     year: "2023",
-    image: "/WhatsApp Image 2026-06-03 at 8.41.00 PM.jpeg",
+    image: "/Commercial PEB Framing Structure.png",
     category: "Commercial"
   },
   {
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     location: "Coimbatore, Tamil Nadu",
     area: "3,10,000 Sq.ft",
     year: "2025",
-    image: "/WhatsApp Image 2026-06-03 at 8.41.01 PM.jpeg",
+    image: "/Turnkey Warehouse Solution Park.png",
     category: "Warehouse"
   }
 ];

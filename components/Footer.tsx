@@ -20,11 +20,11 @@ export default function Footer() {
                 />
               </div>
               <div>
-                <span className="text-lg font-black tracking-wider block leading-none">PRABA TECH</span>
+                <span className="text-lg font-black tracking-wider block leading-none">PRABA TECH FAB</span>
                 <span className="text-[10px] text-orange-500 font-bold tracking-widest uppercase">STEEL SOLUTIONS</span>
               </div>
             </Link>
-             <p className="text-sm text-slate-400 leading-relaxed mb-6">
+            <p className="text-sm text-slate-400 leading-relaxed mb-6">
               We are a leading Pre-Engineered Building (PEB) manufacturer and steel fabrication company specializing in the design, engineering, manufacturing, and installation of high-quality steel structures.
             </p>
           </div>
