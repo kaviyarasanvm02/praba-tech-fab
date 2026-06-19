@@ -4,10 +4,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { 
-  ArrowRight, 
-  CheckCircle2, 
-  Plus, 
+import {
+  ArrowRight,
+  CheckCircle2,
+  Plus,
   Minus,
   Sparkles,
   Zap,
@@ -182,7 +182,7 @@ export default function Home() {
             {/* Visual Panel with Rounded screenshot effect */}
             <div className="relative h-[350px] sm:h-[480px] w-full max-w-[500px] mx-auto rounded-full overflow-hidden border-8 border-slate-100 shadow-2xl">
               <Image
-                src="/WhatsApp Image 2026-06-03 at 8.40.57 PM.jpeg"
+                src="/Pre-Engineered Buildings & Warehouse Construction.png"
                 alt="Karur PEB Steel Factory Site Work"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -401,7 +401,7 @@ export default function Home() {
             {/* Left Image */}
             <div className="col-span-1 lg:col-span-5 relative h-[350px] sm:h-[460px] rounded-3xl overflow-hidden shadow-lg border border-slate-100">
               <Image
-                src="/WhatsApp Image 2026-06-03 at 8.41.00 PM.jpeg"
+                src="/faq section.png"
                 alt="Karur PEB Engineer checking plan"
                 fill
                 sizes="(max-width: 1024px) 100vw, 35vw"
@@ -508,13 +508,12 @@ export default function Home() {
             {pricingPlans.map((plan, idx) => {
               const isFeatured = idx === 1;
               return (
-                <div 
-                  key={idx} 
-                  className={`rounded-[2rem] p-8 sm:p-10 border transition-all duration-300 flex flex-col justify-between text-left h-full ${
-                    isFeatured 
-                      ? "bg-slate-950 text-white border-orange-500/20 shadow-2xl relative" 
-                      : "bg-white text-slate-900 border-slate-200 shadow-md hover:shadow-xl"
-                  }`}
+                <div
+                  key={idx}
+                  className={`rounded-[2rem] p-8 sm:p-10 border transition-all duration-300 flex flex-col justify-between text-left h-full ${isFeatured
+                    ? "bg-slate-950 text-white border-orange-500/20 shadow-2xl relative"
+                    : "bg-white text-slate-900 border-slate-200 shadow-md hover:shadow-xl"
+                    }`}
                 >
                   {isFeatured && (
                     <div className="absolute top-5 right-5 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-extrabold text-[10px] uppercase tracking-wider px-3.5 py-1 rounded-full shadow-md shadow-orange-500/10">
@@ -543,11 +542,10 @@ export default function Home() {
                   </div>
                   <Link
                     href="/contact"
-                    className={`w-full py-3.5 text-center font-extrabold rounded-xl text-sm transition-all duration-300 active:scale-95 ${
-                      isFeatured
-                        ? "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-md shadow-orange-500/10"
-                        : "bg-slate-900 hover:bg-slate-800 text-white"
-                    }`}
+                    className={`w-full py-3.5 text-center font-extrabold rounded-xl text-sm transition-all duration-300 active:scale-95 ${isFeatured
+                      ? "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-md shadow-orange-500/10"
+                      : "bg-slate-900 hover:bg-slate-800 text-white"
+                      }`}
                   >
                     Select Plan & Quote
                   </Link>
@@ -572,7 +570,7 @@ export default function Home() {
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                 By maintaining detailed ultrasonic testing on welds and thickness checks on coils, our Karur plant ensures standard-grade structural frame members.
               </p>
-              
+
               <div className="flex items-center gap-4 pt-4">
                 <div className="w-14 h-14 rounded-full bg-orange-500/10 text-orange-500 flex items-center justify-center font-bold text-lg shrink-0">
                   15+
@@ -586,7 +584,7 @@ export default function Home() {
 
             <div className="relative h-[300px] sm:h-[420px] rounded-3xl overflow-hidden shadow-xl border border-slate-100">
               <Image
-                src="/WhatsApp Image 2026-06-03 at 8.40.54 PM.jpeg"
+                src="/We Are Build Strong Building In Town-1.png"
                 alt="Karur PEB Steel Erection Site"
                 fill
                 sizes="(max-width: 1024px) 100vw, 45vw"
