@@ -337,17 +337,11 @@ export default function Home() {
             </div>
 
             {/* Block 5 */}
-            <div className="relative h-64 rounded-3xl overflow-hidden border border-slate-100 shadow-sm">
-              <Image
-                src="/WhatsApp Image 2026-06-03 at 8.40.56 PM.jpeg"
-                alt="Karur Logistics Shed"
-                fill
-                sizes="33vw"
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-slate-950/40 flex items-end p-6">
-                <h4 className="text-white font-bold text-base">High-Performance Roofings</h4>
-              </div>
+            <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100 flex flex-col justify-center">
+              <h4 className="font-extrabold text-slate-900 text-lg mb-2">High-Performance Roofings</h4>
+              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Leak-proof, insulated, and durable roofing profiles optimized for industrial environments.
+              </p>
             </div>
 
             {/* Block 6 */}

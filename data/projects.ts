@@ -24,7 +24,7 @@ export const projects: Project[] = [
     location: "Trichy, Tamil Nadu",
     area: "1,80,000 Sq.ft",
     year: "2024",
-    image: "/Logistics warehouse.jpeg",
+    image: "/b__Interior_of_a_massi.png",
     category: "Warehouse"
   },
   {
