@@ -18,7 +18,7 @@ export default function HeroSection() {
       subtitle: "PREMIUM STEEL SOLUTIONS.",
       title: "Engineered for maximum scale and safety.",
       description: "We manufacture heavy steel trusses, platforms, and mezzanine frames to international standards directly in our Karur workshop.",
-      image: "/heroimage.png"
+      image: "/silhouette-factory-building.jpeg"
     },
     {
       subtitle: "FAST-TRACK ERECTION.",

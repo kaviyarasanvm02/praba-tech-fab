@@ -337,11 +337,17 @@ export default function Home() {
             </div>
 
             {/* Block 5 */}
-            <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100 flex flex-col justify-center">
-              <h4 className="font-extrabold text-slate-900 text-lg mb-2">High-Performance Roofings</h4>
-              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                Leak-proof, insulated, and durable roofing profiles optimized for industrial environments.
-              </p>
+            <div className="relative h-64 rounded-3xl overflow-hidden border border-slate-100 shadow-sm">
+              <Image
+                src="/WhatsApp Image 2026-06-03 at 8.40.56 PM.jpeg"
+                alt="Karur Logistics Shed"
+                fill
+                sizes="33vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-slate-950/40 flex items-end p-6">
+                <h4 className="text-white font-bold text-base">High-Performance Roofings</h4>
+              </div>
             </div>
 
             {/* Block 6 */}
@@ -486,69 +492,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 9. Pricing Section (Screenshot Style: Three pricing cards) */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="max-w-3xl mx-auto mb-16">
-            <span className="text-orange-500 font-bold uppercase tracking-wider text-xs block mb-3">
-              Project Estimations
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">
-              Transparent Pricing Plans
-            </h2>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {pricingPlans.map((plan, idx) => {
-              const isFeatured = idx === 1;
-              return (
-                <div
-                  key={idx}
-                  className={`rounded-[2rem] p-8 sm:p-10 border transition-all duration-300 flex flex-col justify-between text-left h-full ${isFeatured
-                    ? "bg-slate-950 text-white border-orange-500/20 shadow-2xl relative"
-                    : "bg-white text-slate-900 border-slate-200 shadow-md hover:shadow-xl"
-                    }`}
-                >
-                  {isFeatured && (
-                    <div className="absolute top-5 right-5 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-extrabold text-[10px] uppercase tracking-wider px-3.5 py-1 rounded-full shadow-md shadow-orange-500/10">
-                      Popular Choice
-                    </div>
-                  )}
-                  <div>
-                    <h3 className="text-lg font-bold mb-4">{plan.name}</h3>
-                    <div className="flex items-baseline mb-6">
-                      <span className="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">{plan.price}</span>
-                      <span className={`text-xs ml-2 ${isFeatured ? "text-slate-400" : "text-slate-500"}`}>
-                        {plan.unit}
-                      </span>
-                    </div>
-                    <p className={`text-xs sm:text-sm leading-relaxed mb-6 ${isFeatured ? "text-slate-400" : "text-slate-500"}`}>
-                      {plan.desc}
-                    </p>
-                    <ul className="space-y-3 mb-8">
-                      {plan.features.map((feat, fIdx) => (
-                        <li key={fIdx} className="flex items-start text-xs sm:text-sm">
-                          <CheckCircle2 className="w-4 h-4 text-orange-500 mr-2.5 mt-0.5 shrink-0" />
-                          <span>{feat}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <Link
-                    href="/contact"
-                    className={`w-full py-3.5 text-center font-extrabold rounded-xl text-sm transition-all duration-300 active:scale-95 ${isFeatured
-                      ? "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-md shadow-orange-500/10"
-                      : "bg-slate-900 hover:bg-slate-800 text-white"
-                      }`}
-                  >
-                    Select Plan & Quote
-                  </Link>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
 
       {/* 10. Building Trust (Screenshot Style: Left copy description, Right visual) */}
       <section className="py-20 bg-slate-50">

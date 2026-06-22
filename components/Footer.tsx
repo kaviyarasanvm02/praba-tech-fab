@@ -81,9 +81,29 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-slate-900 pt-8 mt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500">
+        <div className="border-t border-slate-900 pt-8 mt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>© {currentYear} Praba Tech Steel Solutions. All rights reserved.</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+
+          <div className="flex items-center gap-1.5">
+            <span>Made with</span>
+            <span className="text-red-500">❤️</span>
+            <span>by</span>
+            <a
+              href="https://www.stratedgesolutions.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 hover:text-white transition-colors font-semibold"
+            >
+              <img
+                src="/footer brand logo.png"
+                alt="stratEdge Logo"
+                className="h-3.5 w-auto object-contain"
+              />
+              <span>stratEdge</span>
+            </a>
+          </div>
+
+          <div className="flex space-x-6 mt-2 md:mt-0">
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
